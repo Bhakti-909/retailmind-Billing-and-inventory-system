@@ -1,0 +1,31 @@
+.barcode-scanner-backdrop { position:fixed; inset:0; z-index:1000; display:grid; place-items:center; padding:18px; background:rgb(16 32 29 / 62%); }
+.barcode-scanner-dialog { width:min(100%, 560px); max-height:calc(100vh - 36px); overflow:auto; padding:22px; border:1px solid #dce6e3; border-radius:14px; background:#fff; color:#172a2a; box-shadow:0 24px 70px rgb(0 0 0 / 24%); }
+.barcode-scanner-heading { display:flex; align-items:flex-start; justify-content:space-between; gap:14px; margin-bottom:14px; }
+.barcode-scanner-heading p { margin:0 0 5px; color:#0f766e; font-size:11px; font-weight:750; letter-spacing:.08em; }
+.barcode-scanner-heading h2 { margin:0; font-size:22px; }
+.barcode-scanner-close { width:34px; height:34px; border:1px solid #dce6e3; border-radius:5px; background:#fff; color:#344b45; font-size:22px; cursor:pointer; }
+.barcode-camera-choice,.barcode-manual-entry { display:grid; gap:6px; margin:0 0 12px; color:#465b56; font-size:11px; font-weight:650; }
+.barcode-camera-choice select,.barcode-manual-entry input { width:100%; min-width:0; height:40px; padding:0 10px; border:1px solid #ccd9d5; border-radius:4px; background:#fcfdfd; color:#172a2a; font:inherit; font-size:12px; }
+.barcode-camera-frame { position:relative; overflow:hidden; min-height:220px; aspect-ratio:16 / 10; margin-bottom:12px; border-radius:10px; background:#10201d; }
+.barcode-camera-frame video { display:block; width:100%; height:100%; min-height:190px; object-fit:contain; }
+.barcode-camera-frame::after { position:absolute; top:50%; left:50%; width:min(72%, 360px); height:34%; border:2px solid #76e2c4; border-radius:10px; box-shadow:0 0 0 999px rgb(8 20 18 / 12%), 0 0 22px rgb(118 226 196 / 28%); content:""; pointer-events:none; transform:translate(-50%, -50%); }
+.barcode-camera-status { position:absolute; inset:auto 0 0; padding:8px 10px; background:rgb(16 32 29 / 76%); color:#fff; font-size:11px; }
+.barcode-camera-error { margin:0 0 12px; color:#a4312b; font-size:12px; line-height:1.45; }
+.barcode-camera-hint { margin:0 0 12px; color:#66756f; font-size:12px; line-height:1.5; }
+.barcode-scan-guide { margin:0 0 14px; padding:12px 14px; border:1px solid #e1e8e5; border-radius:9px; background:#f8faf9; }
+.barcode-scan-guide strong { display:block; margin-bottom:4px; color:#263b35; font-size:13px; line-height:1.4; }
+.barcode-scan-guide .barcode-camera-hint { margin:0; }
+.barcode-scan-feedback { display:flex; align-items:center; gap:10px; min-height:52px; margin:0 0 12px; padding:10px 12px; border:1px solid #b7e4d3; border-radius:8px; background:#effaf5; color:#176b4d; font-size:13px; }
+.barcode-scan-feedback strong,.barcode-scan-feedback small { display:block; }
+.barcode-feedback-dismiss { flex:0 0 28px; width:28px; height:28px; border:1px solid currentColor; border-radius:6px; background:transparent; color:inherit; font:inherit; font-size:20px; line-height:1; cursor:pointer; }
+.barcode-scan-feedback strong { font-size:13px; }
+.barcode-scan-feedback small { margin-top:3px; color:inherit; opacity:.85; font-size:12px; line-height:1.45; }
+.barcode-result-icon { display:grid; flex:0 0 28px; width:28px; height:28px; place-items:center; border-radius:50%; background:rgb(255 255 255 / 75%); font-size:15px; font-weight:800; }
+.barcode-scan-feedback.ready { border-color:#dce6e3; background:#f7f9f8; color:#52635e; }
+.barcode-scan-feedback.warning { border-color:#f5d28a; background:#fff8e8; color:#8a5a00; }
+.barcode-scanner-done { width:100%; min-height:40px; margin-top:14px; border:1px solid #ccd9d5; border-radius:4px; background:#fff; color:#344b45; font:inherit; font-size:12px; font-weight:700; cursor:pointer; }
+.barcode-manual-entry { margin:0; font-size:12px; }
+.barcode-manual-entry>div { display:grid; grid-template-columns:minmax(0, 1fr) auto; gap:8px; }
+.barcode-manual-entry button { min-height:40px; padding:0 13px; border:0; border-radius:4px; background:#0f766e; color:#fff; font:inherit; font-size:11px; font-weight:700; cursor:pointer; }
+.barcode-manual-entry button:disabled { opacity:.5; cursor:not-allowed; }
+@media (max-width:520px) { .barcode-scanner-dialog { padding:16px; }.barcode-camera-frame { min-height:175px; }.barcode-camera-frame video { min-height:160px; } }

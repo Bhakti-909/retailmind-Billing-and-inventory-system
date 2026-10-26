@@ -1,0 +1,158 @@
+.auth-brand-pill {
+  display: inline-block;
+  padding: 6px 16px;
+  background: #dce6fd;
+  color: #3457f0;
+  font-weight: 500;
+  font-size: 13px;
+  border-radius: 999px;
+  margin-bottom: 22px;
+}
+
+.otp-card {
+  width: 420px;
+  text-align: center;
+}
+
+.auth-title {
+  font-size: 26px;
+  font-weight: 500;
+  color: #14151a;
+  margin: 0 0 10px;
+}
+
+.auth-subtitle {
+  font-size: 14px;
+  color: #6b7280;
+  line-height: 1.6;
+  margin: 0 0 4px;
+}
+
+.otp-email {
+  font-size: 14px;
+  color: #14151a;
+  font-weight: 500;
+  margin: 0 0 28px;
+  word-break: break-word;
+}
+
+.otp-input-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.otp-box {
+  width: 48px;
+  height: 52px;
+  box-sizing: border-box;
+
+  text-align: center;
+
+  border: 1.5px solid #e2e5ec;
+  border-radius: 10px;
+
+  background: #fafbfd;
+
+  color: #14151a;
+  font-size: 20px;
+  font-weight: 500;
+
+  transition:
+    border-color 0.15s ease,
+    box-shadow 0.15s ease,
+    background 0.15s ease;
+}
+
+.otp-box:focus {
+  outline: none;
+  border-color: #3457f0;
+  background: #ffffff;
+  box-shadow: 0 0 0 3px rgba(52, 87, 240, 0.15);
+}
+
+.otp-box-filled {
+  border-color: #3457f0;
+  background: #ffffff;
+}
+
+.otp-box-error {
+  border-color: #e5484d;
+}
+
+.otp-button {
+  width: 100%;
+  height: 48px;
+  margin-bottom: 18px;
+}
+
+.otp-resend-row {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 22px;
+  font-size: 13px;
+}
+
+.otp-timer {
+  color: #9aa1ac;
+}
+
+.otp-resend-link {
+  background: none;
+  border: none;
+  padding: 0;
+
+  color: #3457f0;
+  font-weight: 500;
+  font-size: 13px;
+
+  cursor: pointer;
+}
+
+.otp-resend-link:hover {
+  text-decoration: underline;
+}
+
+.auth-divider {
+  border: none;
+  border-top: 1px solid #edeef2;
+  margin: 0 0 16px;
+}
+
+.auth-footer-text {
+  font-size: 13px;
+  color: #6b7280;
+  margin: 0;
+}
+
+.auth-link-button {
+  background: none;
+  border: none;
+  padding: 0;
+
+  color: #3457f0;
+  font-weight: 500;
+  font-size: 13px;
+
+  cursor: pointer;
+}
+
+.auth-link-button:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 520px) {
+  .otp-card {
+    width: 100%;
+  }
+
+  .otp-input-row {
+    gap: 6px;
+  }
+
+  .otp-box {
+    width: 44px;
+    height: 50px;
+  }
+}

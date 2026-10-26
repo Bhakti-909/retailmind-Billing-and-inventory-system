@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smart Retail — Billing & Inventory Management</title>
+    <meta name="description" content="Smart Retail: professional billing, inventory, and customer management for retail shops." />
+
+    <!-- 1. Preconnect to Google Fonts CDN FIRST (eliminates DNS/handshake delay) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- 2. Load Inter font with font-display:swap so layout is reserved from the start -->
+    <!--    Weights 400/500/600/700 cover all UI text — no weight-switch shift         -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- 3. Inline critical CSS: lock html/body dimensions immediately so
+            the root div never shifts when React hydrates                  -->
+    <style>
+      *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+      html, body, #root {
+        width: 100%;
+        height: 100%;
+        font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+      /* Prevent scroll bar appearing/disappearing from shifting layout */
+      html { overflow-y: scroll; }
+      /* Invisible placeholder so page doesn't flash white before React loads */
+      #root { min-height: 100vh; background: #f5f7fb; }
+    </style>
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
